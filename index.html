@@ -59,7 +59,8 @@
   .sec-h{font-family:var(--bn);font-weight:600;font-size:13.5px;letter-spacing:.03em;color:var(--mute);margin-bottom:26px;display:flex;align-items:center;gap:14px}
   .sec-h::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,var(--line),transparent)}
 
-  .board{padding:40px 0 20px}
+  .board{padding:40px 0 20px;position:relative;z-index:2}
+  .bp{position:relative;z-index:2}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:20px}
 
   .card{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;overflow:hidden;opacity:0;transform:translateY(34px) scale(.97);transition:transform .7s cubic-bezier(.2,.7,.2,1),opacity .7s,border-color .3s,box-shadow .3s}
@@ -78,7 +79,7 @@
   .desc{color:#bccbd3;font-size:13.5px;margin:13px 0 4px}
   .pen{font-size:12px;color:var(--crimson-bright);margin-top:8px;font-weight:500}
 
-  .calc{margin-top:18px;padding-top:18px;border-top:1px dashed var(--line)}
+  .calc{margin-top:18px;padding-top:18px;border-top:1px dashed var(--line);position:relative;z-index:3}
   .calc label{font-size:11px;letter-spacing:.02em;color:var(--mute);display:block;margin-bottom:8px}
   .inrow{display:flex;align-items:center;gap:8px;background:rgba(3,10,20,.6);border:1.5px solid var(--line);border-radius:12px;padding:2px 14px;transition:border-color .2s,box-shadow .2s}
   .inrow:focus-within{border-color:var(--teal);box-shadow:0 0 0 3px rgba(31,157,143,.18)}
